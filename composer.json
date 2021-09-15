@@ -1,0 +1,20 @@
+{
+    "name": "jtarleton/sonnys",
+    "description": "Sonnys coding exercise",
+    "type": "project",
+    "authors": [
+        {
+            "name": "James Tarleton",
+            "email": "jtarleton@mailinator.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.3",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "HelloWorld": "src/app/models"
+        }
+    }
+}
