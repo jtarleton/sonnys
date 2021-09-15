@@ -1,3 +1,7 @@
 <?php 
 
-class Widget extends SupportBase {}
+namespace Sonnys\Application;
+class Widget {
+
+} 
+

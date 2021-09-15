@@ -1,4 +1,4 @@
-Son<?php 
+<?php 
 
 abstract class SupportBase {}
 class Widget extends SupportBase {}
@@ -34,26 +34,9 @@ echo $greeter->sayHello()
 echo "Greeting $informalGreeter->getTarget()"
 echo $informalGreeter->sayHello();
 
-class Pet implements HasFirst {
-	use NameInfo;
-	public function __construct() {
-		
-	}
-}
-class Person implements FirstLastName{
-	use NameInfo;
-	private $middleName;
-	public function __construct() {
 
-	}
-}
-class Employee extends Person implements FirstLastName{
-	use NameInfo;
-	public function __construct() {
-		
-	}	
 
-}
+
 
 trait NameInfo {
 	private $firstName, $middleName, $lastName;
@@ -65,17 +48,4 @@ trait NameInfo {
 		];
 	}
 }
-interface EmployeeIdentifiable {
-	public function setEmployeeId($id);
-}
-interface HasFirst {
-	public setFirstName($firstName);
-}
-interface HasFirstLast {
-	public function setFirstName($firstName) {}
-	public function setLastName($lastName) {}
-}
 
-interface PetName {
-
-}

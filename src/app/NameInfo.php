@@ -1,4 +1,8 @@
 <?php 
+
+namespace Sonnys\Application;
+
+//
 trait NameInfo {
 	private $firstName, $middleName, $lastName;
 	public function getName() {
@@ -13,11 +17,8 @@ trait NameInfo {
 interface HasFirst {
 	public setFirstName($firstName);
 }
+
 interface HasFirstLast {
 	public function setFirstName($firstName) {}
 	public function setLastName($lastName) {}
-}
-
-interface PetName {
-
 }
