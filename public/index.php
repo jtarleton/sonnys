@@ -9,7 +9,7 @@ use Sonnys\Application\Support\Widget as SupportWidget;
 
 
 use Sonnys\Application\WidgetFactory;
-use Sonnys\Appliction\Horse;
+use Sonnys\Application\Horse;
 use Sonnys\Application\Greeter;
 use Sonnys\Application\InformalGreeter;
 use Sonnys\Application\Pegasus;
