@@ -84,6 +84,10 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
     );
 
     public static $classMap = array (
+        'Greeter' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
+        'InformalGreeter' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
+        'LineInfo' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
+        'NameInfo' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -701,6 +705,25 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Sonnys\\Application\\Bird' => __DIR__ . '/../..' . '/src/app/Bird.php',
+        'Sonnys\\Application\\Employee' => __DIR__ . '/../..' . '/src/app/Employee.php',
+        'Sonnys\\Application\\EmployeeIdentifiable' => __DIR__ . '/../..' . '/src/app/EmployeeIdentifiable.php',
+        'Sonnys\\Application\\Greeter' => __DIR__ . '/../..' . '/src/app/Greeter.php',
+        'Sonnys\\Application\\HasFirst' => __DIR__ . '/../..' . '/src/app/NameInfo.php',
+        'Sonnys\\Application\\HasFirstLast' => __DIR__ . '/../..' . '/src/app/NameInfo.php',
+        'Sonnys\\Application\\Horse' => __DIR__ . '/../..' . '/src/app/Horse.php',
+        'Sonnys\\Application\\InformalGreeter' => __DIR__ . '/../..' . '/src/app/InformalGreeter.php',
+        'Sonnys\\Application\\NameInfo' => __DIR__ . '/../..' . '/src/app/NameInfo.php',
+        'Sonnys\\Application\\Order' => __DIR__ . '/../..' . '/src/app/Order.php',
+        'Sonnys\\Application\\Pegasus' => __DIR__ . '/../..' . '/src/app/Pegasus.php',
+        'Sonnys\\Application\\Person' => __DIR__ . '/../..' . '/src/app/Person.php',
+        'Sonnys\\Application\\Pet' => __DIR__ . '/../..' . '/src/app/Pet.php',
+        'Sonnys\\Application\\PetName' => __DIR__ . '/../..' . '/src/app/Pet.php',
+        'Sonnys\\Application\\Support\\SupportBase' => __DIR__ . '/../..' . '/src/app/Support/SupportBase.php',
+        'Sonnys\\Application\\Support\\Widget' => __DIR__ . '/../..' . '/src/app/Support/SupportWidget.php',
+        'Sonnys\\Application\\Widget' => __DIR__ . '/../..' . '/src/app/Widget.php',
+        'Sonnys\\Application\\WidgetFactory' => __DIR__ . '/../..' . '/src/app/WidgetFactory.php',
+        'SupportBase' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -709,6 +732,8 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'Widget' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
+        'nWidget' => __DIR__ . '/../..' . '/src/app/phpTeamCandidate.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
