@@ -8,9 +8,7 @@ use Sonnys\Application\Support\Widget as SupportWidget;
 
 
 
-use Sonnys\Application\Widget;
 use Sonnys\Application\WidgetFactory;
-use Sonnys\Application\Support\Widget as SupportWidget;
 use Sonnys\Appliction\Horse;
 use Sonnys\Application\Greeter;
 use Sonnys\Application\InformalGreeter;
