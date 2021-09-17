@@ -6,8 +6,8 @@ require __DIR__ . '/../vendor/autoload.php';
 use Sonnys\Application\Widget;
 use Sonnys\Application\Support\Widget as SupportWidget;
 
-
-
+use Sonnys\Application\Exam;
+use Sonnys\Application\ExamBuilder;
 use Sonnys\Application\WidgetFactory;
 use Sonnys\Application\Horse;
 use Sonnys\Application\Greeter;
@@ -15,7 +15,18 @@ use Sonnys\Application\InformalGreeter;
 use Sonnys\Application\Pegasus;
 use Sonnys\Application\Pet;
 use Sonnys\Application\Person;
+
+use Sonnys\Application\Customer;
 use Sonnys\Application\Order;
+use Sonnys\Application\OrderLoader;
+
+use Sonnys\Application\RemoteControl;
+use Sonnys\Application\RemoteControlUser;
+use Sonnys\Application\CableBox;
+use Sonnys\Application\CableBoxRemote;
+use Sonnys\Application\Television;
+use Sonnys\Application\TVRemote;
+use Sonnys\Application\UniversalRemote;
 
 $widget = new Widget();
 $supportWidget = new SupportWidget();
@@ -38,3 +49,18 @@ echo "Greeting" . $greeter->getTarget() . '<br />';
 echo $greeter->sayHello() .'<br />';
 echo "Greeting " . $informalGreeter->getTarget() . '<br />';
 echo $informalGreeter->sayHello() . '<br />';
+
+$attributes = [
+	'time' => time(), 
+	'place' => 'Sonnys', 
+	'timeLimit' => NULL
+];
+
+$emptyExam = new Exam();
+$examBuilder = new ExamBuilder($emptyExam);
+
+$fullyInitializedExam = $examBuilder->initAll($attributes);
+$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
+
+
+

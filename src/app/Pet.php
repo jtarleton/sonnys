@@ -2,13 +2,14 @@
 
 namespace Sonnys\Application;
 
-class Pet  {
+/**
+ * 
+ */
+class Pet implements Nameable {
+
 	use NameInfo;
+	
 	public function __construct() {
 		
 	}
-}
-
-interface PetName {
-
 }

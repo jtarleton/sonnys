@@ -2,9 +2,13 @@
 
 namespace Sonnys\Application;
 
-class Person implements FirstLastName{
+/**
+ * 
+ */
+class Person implements Nameable, PersonInterface {
+
 	use NameInfo;
-	private $middleName;
+
 	public function __construct() {
 
 	}

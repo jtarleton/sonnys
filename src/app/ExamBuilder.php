@@ -1,4 +1,8 @@
 <?php
+namespace Sonnys\Application;
+
+use \Sonnys\Application\Exam;
+use \Sonnys\Application\ExamBuilderInterface;
 
 class ExamBuilder implements ExamBuilderInterface {
     private $exam;
@@ -30,9 +34,5 @@ class ExamBuilder implements ExamBuilderInterface {
     }
 }
 
-$emptyExam = new Exam();
-$examBuilder = new ExamBuilder($emptyExam);
 
-$fullyInitializedExam = $examBuilder->initAll($attributes);
-$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
 

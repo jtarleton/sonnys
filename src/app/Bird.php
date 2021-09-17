@@ -2,7 +2,9 @@
 
 namespace Sonnys\Application;
 
-// A Bird fly.
+/**
+ * A Bird can fly.
+ */
 class Bird {
 
 }

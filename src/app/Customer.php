@@ -1,5 +1,10 @@
 <?php 
 
+namespace Sonnys\Application;
+
+/**
+ * 
+ */
 class Customer {
 
 	protected $_id, $_firstName, $_lastName, $_createdDate;

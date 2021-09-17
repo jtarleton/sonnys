@@ -3,7 +3,7 @@
 namespace Sonnys\Application;
 
 //	A Horse gallops.
-class Horse {
+class Horse implements PegasusInterface {
 
 
 }

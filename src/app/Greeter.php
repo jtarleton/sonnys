@@ -2,12 +2,15 @@
 
 namespace Sonnys\Application;
 
-abstract class Greeter {
+class Greeter {
 	public function getTarget() {
 
 	}
-
-	abstract function sayHello() {
-
+	/**
+	 * @param string
+	 * @return string
+	 */
+	function sayHello(string $punctuation = '|') : string {
+		return sprintf('Hello, %s %s', $this->_target, $punctuation);
 	}
 }
