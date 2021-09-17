@@ -60,7 +60,7 @@ $supportWidget = new SupportWidget();
 $horse = new Horse();
 $greeter = new Greeter();
 $informalGreeter = new InformalGreeter();
-$pegasus = new Pegasus();
+$pegasus = new Pegasus(new Bird(), new Horse());
 $pet = new Pet();
 $person = new Person();
 
