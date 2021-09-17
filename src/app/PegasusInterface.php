@@ -1,4 +1,5 @@
 <?php 
+namespace Sonnys\Application;
 
 /**
  * All Pegasus objects should be able to fly and gallop.
