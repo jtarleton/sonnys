@@ -9,7 +9,7 @@ use Sonnys\Application\TVRemote;
 /**
  * 
  */
-class RemoteControlUser implements RemoteControl {
+class RemoteControlUser {
 	
 	/**
 	 * TVRemote is the default remote type.

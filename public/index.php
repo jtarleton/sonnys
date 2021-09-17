@@ -66,9 +66,9 @@ $person = new Person();
 
 
 echo "Greeting" . $greeter->getTarget() . '<br />';
-echo $greeter->sayHello() .'<br />';
+echo $greeter->sayHello('?') .'<br /><br /><br />';
 echo "Greeting " . $informalGreeter->getTarget() . '<br />';
-echo $informalGreeter->sayHello() . '<br />';
+echo $informalGreeter->sayHello() . '<br /><br /><br />';
 
 
 

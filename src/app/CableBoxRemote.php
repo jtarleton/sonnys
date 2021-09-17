@@ -2,6 +2,7 @@
 
 namespace Sonnys\Application;
 
+use Sonnys\Application\CableBox;
 /**
  * 
  */
@@ -9,7 +10,7 @@ class CableBoxRemote implements RemoteControl {
 
 	private $_cablebox;
 
-	public function __construct(Cablebox $cablebox) {
+	public function __construct(CableBox $cablebox) {
 		$this->_cablebox = $cablebox;
 	}
 
