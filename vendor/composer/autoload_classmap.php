@@ -6,8 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'GreeterInterface' => $baseDir . '/src/app/GreeterInterface.php',
-    'GreeterTrait' => $baseDir . '/src/app/GreeterTrait.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => $vendorDir . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -637,6 +635,8 @@ return array(
     'Sonnys\\Application\\ExamBuilder' => $baseDir . '/src/app/ExamBuilder.php',
     'Sonnys\\Application\\ExamBuilderInterface' => $baseDir . '/src/app/ExamBuilderInterface.php',
     'Sonnys\\Application\\Greeter' => $baseDir . '/src/app/Greeter.php',
+    'Sonnys\\Application\\GreeterInterface' => $baseDir . '/src/app/GreeterInterface.php',
+    'Sonnys\\Application\\GreeterTrait' => $baseDir . '/src/app/GreeterTrait.php',
     'Sonnys\\Application\\Horse' => $baseDir . '/src/app/Horse.php',
     'Sonnys\\Application\\InformalGreeter' => $baseDir . '/src/app/InformalGreeter.php',
     'Sonnys\\Application\\NameInfo' => $baseDir . '/src/app/NameInfo.php',

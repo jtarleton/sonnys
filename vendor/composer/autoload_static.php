@@ -84,8 +84,6 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
     );
 
     public static $classMap = array (
-        'GreeterInterface' => __DIR__ . '/../..' . '/src/app/GreeterInterface.php',
-        'GreeterTrait' => __DIR__ . '/../..' . '/src/app/GreeterTrait.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -715,6 +713,8 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
         'Sonnys\\Application\\ExamBuilder' => __DIR__ . '/../..' . '/src/app/ExamBuilder.php',
         'Sonnys\\Application\\ExamBuilderInterface' => __DIR__ . '/../..' . '/src/app/ExamBuilderInterface.php',
         'Sonnys\\Application\\Greeter' => __DIR__ . '/../..' . '/src/app/Greeter.php',
+        'Sonnys\\Application\\GreeterInterface' => __DIR__ . '/../..' . '/src/app/GreeterInterface.php',
+        'Sonnys\\Application\\GreeterTrait' => __DIR__ . '/../..' . '/src/app/GreeterTrait.php',
         'Sonnys\\Application\\Horse' => __DIR__ . '/../..' . '/src/app/Horse.php',
         'Sonnys\\Application\\InformalGreeter' => __DIR__ . '/../..' . '/src/app/InformalGreeter.php',
         'Sonnys\\Application\\NameInfo' => __DIR__ . '/../..' . '/src/app/NameInfo.php',
