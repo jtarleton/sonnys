@@ -64,17 +64,13 @@ $pegasus = new Pegasus(new Bird(), new Horse());
 $pet = new Pet();
 $person = new Person();
 
-$classes = get_declared_classes();
-echo '<pre>';
-print_r($classes);
-/*
 
 echo "Greeting" . $greeter->getTarget() . '<br />';
 echo $greeter->sayHello() .'<br />';
 echo "Greeting " . $informalGreeter->getTarget() . '<br />';
 echo $informalGreeter->sayHello() . '<br />';
 
-*/
+
 
 /*
 $attributes = [
@@ -90,6 +86,8 @@ $fullyInitializedExam = $examBuilder->initAll($attributes);
 $partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
 
 */
+
+/*
 $universalRemote = new UniversalRemote();
 
 $remoteControlUser = new RemoteControlUser(UniversalRemote);
@@ -112,3 +110,13 @@ switch ($type) {
 }
 $remoteControlUser->setRemoteControl($remoteControl)->pushButton();
 
+*/
+
+/*
+$classes = get_declared_classes();
+echo '<pre>';
+print_r($classes);
+*/
+
+
+echo '<br />Done.';

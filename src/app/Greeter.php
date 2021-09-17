@@ -2,10 +2,11 @@
 
 namespace Sonnys\Application;
 
-class Greeter {
-	public function getTarget() {
+use \Sonnys\Application\GreeterTrait;
+use \Sonnys\Application\GreeterInterface;
 
-	}
+class Greeter implements GreeterInterface {
+
 	/**
 	 * @param string
 	 * @return string
