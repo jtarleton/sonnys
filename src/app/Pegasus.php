@@ -2,9 +2,9 @@
 
 namespace Sonnys\Application;
 
-use \Sonnys\Application\Bird;
-use \Sonnys\Application\Horse;
-use \Sonnys\Application\PegasusInterface;
+use Sonnys\Application\Bird;
+use Sonnys\Application\Horse;
+use Sonnys\Application\PegasusInterface;
 
 /**
  * A Pegasus is a winged-horse creature than can gallop like a horse and fly like a bird.
