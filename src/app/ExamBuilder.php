@@ -4,6 +4,9 @@ namespace Sonnys\Application;
 use \Sonnys\Application\Exam;
 use \Sonnys\Application\ExamBuilderInterface;
 
+/**
+ * ExamBuilder to assist in Exam object creation
+ */
 class ExamBuilder implements ExamBuilderInterface {
     private $exam;
     public function __construct(Exam $exam) {
