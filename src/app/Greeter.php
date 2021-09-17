@@ -6,7 +6,9 @@ use \Sonnys\Application\GreeterTrait;
 use \Sonnys\Application\GreeterInterface;
 
 class Greeter implements GreeterInterface {
-
+	
+	use GreeterTrait;
+	
 	/**
 	 * @param string
 	 * @return string
