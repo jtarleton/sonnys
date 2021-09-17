@@ -15,7 +15,7 @@ class CableBoxRemote implements RemoteControl {
 	}
 
 	public function powerOn() : void {
-		$this->_cablebox->setPower();
+		$this->_cablebox->setPower(TRUE);
 		syslog(LOG_INFO, 'Powering on CableBox from ' . __CLASS__);
 	}
 }
