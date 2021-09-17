@@ -5,13 +5,15 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Sonnys\Application\Widget;
 use Sonnys\Application\Support\Widget as SupportWidget;
-
+/* 
 use Sonnys\Application\Exam;
 use Sonnys\Application\ExamBuilder;
 use Sonnys\Application\WidgetFactory;
 use Sonnys\Application\Horse;
 use Sonnys\Application\Greeter;
 use Sonnys\Application\InformalGreeter;
+use Sonnys\Application\GreeterInterface;
+use Sonnys\Application\GreeterTrait;
 use Sonnys\Application\Pegasus;
 use Sonnys\Application\Pet;
 use Sonnys\Application\Person;
@@ -26,7 +28,9 @@ use Sonnys\Application\CableBox;
 use Sonnys\Application\CableBoxRemote;
 use Sonnys\Application\Television;
 use Sonnys\Application\TVRemote;
-use Sonnys\Application\UniversalRemote;
+use Sonnys\Application\UniversalRemote; 
+
+*/
 
 /*
 $widget = new Widget();

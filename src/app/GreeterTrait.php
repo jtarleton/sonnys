@@ -1,5 +1,7 @@
 <?php 
 
+namespace Sonnys\Application;
+
 /**
  * Methods to re-use/copy into concrete Greeter classes.
  */

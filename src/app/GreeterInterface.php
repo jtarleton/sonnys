@@ -1,5 +1,7 @@
 <?php 
 
+namespace Sonnys\Application;
+
 interface GreeterInterface {
 
 	public function getTarget() : string;
