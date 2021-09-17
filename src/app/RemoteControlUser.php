@@ -30,7 +30,7 @@ class RemoteControlUser {
 	}
 
 	public function pushButton(){
-		$this->remoteControl->powerOn();
+		$this->remoteControl->powerOn(TRUE);
 		return $this;
 	}
 }
