@@ -4,19 +4,33 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use Sonnys\Application\Widget;
+use Sonnys\Application\Support\SupportBase;
+
 use Sonnys\Application\Support\Widget as SupportWidget;
-/* 
+
 use Sonnys\Application\Exam;
 use Sonnys\Application\ExamBuilder;
+use Sonnys\Application\ExamBuilderInterface;
+
 use Sonnys\Application\WidgetFactory;
+
+use Sonnys\Application\EmployeeInterface;
+use Sonnys\Application\Employee;
+
 use Sonnys\Application\Horse;
 use Sonnys\Application\Greeter;
 use Sonnys\Application\InformalGreeter;
 use Sonnys\Application\GreeterInterface;
 use Sonnys\Application\GreeterTrait;
 use Sonnys\Application\Pegasus;
+use Sonnys\Application\PegasusInterface;
+
 use Sonnys\Application\Pet;
 use Sonnys\Application\Person;
+
+use Sonnys\Application\Nameable;
+use Sonnys\Application\NameInfo;
+
 
 use Sonnys\Application\Customer;
 use Sonnys\Application\Order;
@@ -30,28 +44,29 @@ use Sonnys\Application\Television;
 use Sonnys\Application\TVRemote;
 use Sonnys\Application\UniversalRemote; 
 
-*/
 
-/*
+
+
 $widget = new Widget();
 $supportWidget = new SupportWidget();
 
 $widget = WidgetFactory::Create();
 $supportWidget = WidgetFactory::Create('Support');
 
-*/
 
-/*
+
 $widget = new Widget();
-$supportWidget = new Widget();
+$supportWidget = new SupportWidget();
 $horse = new Horse();
 $greeter = new Greeter();
 $informalGreeter = new InformalGreeter();
 $pegasus = new Pegasus();
 $pet = new Pet();
 $person = new Person();
-*/
 
+$classes = get_declared_classes();
+echo '<pre>';
+print_r($classes);
 /*
 
 echo "Greeting" . $greeter->getTarget() . '<br />';
