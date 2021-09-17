@@ -28,13 +28,16 @@ use Sonnys\Application\Television;
 use Sonnys\Application\TVRemote;
 use Sonnys\Application\UniversalRemote;
 
+/*
 $widget = new Widget();
 $supportWidget = new SupportWidget();
 
 $widget = WidgetFactory::Create();
 $supportWidget = WidgetFactory::Create('Support');
 
+*/
 
+/*
 $widget = new Widget();
 $supportWidget = new Widget();
 $horse = new Horse();
@@ -43,13 +46,18 @@ $informalGreeter = new InformalGreeter();
 $pegasus = new Pegasus();
 $pet = new Pet();
 $person = new Person();
+*/
 
+/*
 
 echo "Greeting" . $greeter->getTarget() . '<br />';
 echo $greeter->sayHello() .'<br />';
 echo "Greeting " . $informalGreeter->getTarget() . '<br />';
 echo $informalGreeter->sayHello() . '<br />';
 
+*/
+
+/*
 $attributes = [
 	'time' => time(), 
 	'place' => 'Sonnys', 
@@ -62,5 +70,26 @@ $examBuilder = new ExamBuilder($emptyExam);
 $fullyInitializedExam = $examBuilder->initAll($attributes);
 $partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
 
+*/
+$universalRemote = new UniversalRemote();
 
+$remoteControlUser = new RemoteControlUser(UniversalRemote);
+
+$type = NULL;
+
+switch ($type) {
+	default:
+	case 'Television':
+		$remoteControl = new TVRemote();
+		break;
+
+	case 'CableBox':
+		$remoteControl = new CableBoxRemote();
+		break;
+
+	case 'Universal':
+		$remoteControl = new UniversalRemote();
+		break;
+}
+$remoteControlUser->setRemoteControl($remoteControl)->pushButton();
 

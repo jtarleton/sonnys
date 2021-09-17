@@ -30,27 +30,3 @@ class UniversalRemote implements RemoteControl {
 		syslog(LOG_INFO, 'Powering on CableBox from ' . __CLASS__);
 	}
 }
-
-
-
-$universalRemote = new UniversalRemote();
-
-$remoteControlUser = new RemoteControlUser(UniversalRemote);
-
-$type = NULL;
-
-switch ($type) {
-	default:
-	case 'Television':
-		$remoteControl = new TVRemote();
-		break;
-
-	case 'CableBox':
-		$remoteControl = new CableBoxRemote();
-		break;
-
-	case 'Universal':
-		$remoteControl = new UniversalRemote();
-		break;
-}
-$remoteControlUser->setRemoteControl($remoteControl)->pushButton();
