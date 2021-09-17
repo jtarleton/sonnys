@@ -6,8 +6,8 @@ namespace Sonnys\Application;
  */
 interface PegasusInterface {
 
-	//public function fly();
+	public function fly();
 
-	//public function gallop();
+	public function gallop();
 
 }
