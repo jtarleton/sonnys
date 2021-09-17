@@ -10,7 +10,7 @@ use Sonnys\Application\TVRemote;
  * 
  */
 class RemoteControlUser {
-	
+	private $remoteControl;
 	/**
 	 * TVRemote is the default remote type.
 	 */
