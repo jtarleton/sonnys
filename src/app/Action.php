@@ -88,7 +88,9 @@ class Action { //extends ApiController {
 				$cablebox = new CableBox();
 				$universalRemote = new UniversalRemote($tv, $cablebox);
 				$remoteControlUser = new RemoteControlUser($universalRemote);
-
+				if (!empty($type)) {
+					echo 'You selected <b>' . $type .'</b>'; 
+				}
 				$type =  (isset($_POST['remote_type'])) 
 					? strip_tags($_POST['remote_type']) 
 					: NULL;
@@ -109,6 +111,7 @@ class Action { //extends ApiController {
 				}
 				$remoteControlUser->setRemoteControl($remoteControl)
 								  ->pushButton(); 
+
 				break;
 
 			case 'order_tracking':
