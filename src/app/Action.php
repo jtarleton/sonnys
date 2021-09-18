@@ -134,8 +134,10 @@ class Action { //extends ApiController {
 				$examBuilder = new ExamBuilder($emptyExam);
 
 				$fullyInitializedExam = $examBuilder->initAll($attributes);
-				$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam(); 
-
+				$partiallyIntitializedExam = $examBuilder->setTime($attributes['time'])
+														 ->setPlace($attributes['place'])
+														 ->getExam(); 
+				print_r($fullyInitializedExam);
 				break;
 		}
 	}
