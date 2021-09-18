@@ -27,12 +27,20 @@ $classes = get_declared_classes();
   <p>
 
   	<fieldset> <legend>Select a Remote Type</legend>
-  	<form action="" method="POST">
+  	<form action="http://crystalbit.us/#tab-3" method="POST">
 
   		<div>
-  		<select name="remote_type"><option value="Television">Television</option><option value="CableBox">Cable Box</option><option value="Universal">Universal</option></select></div>
+  		<select name="remote_type">
+  			<option value="Television">Television</option>
+  			<option value="CableBox">Cable Box</option>
+  			<option value="Universal">Universal</option>
+  		</select>
+  		</div>
 
-  		<div><input type="submit" value="Submit"></input></div>
+  		<div>
+  			<input type="submit" value="Submit">
+  			</input>
+  		</div>
   	</form></fieldset>
 
   	<?php $action->render('universal_remote'); ?>   </p>

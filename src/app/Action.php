@@ -84,10 +84,10 @@ class Action { //extends ApiController {
 
 			case 'universal_remote':
 				echo 'Universal Remote.';
-				/*
-				$universalRemote = new UniversalRemote();
-
-				$remoteControlUser = new RemoteControlUser(UniversalRemote);
+				$tv = new Television();
+				$cablebox = new CableBox();
+				$universalRemote = new UniversalRemote($tv, $cablebox);
+				$remoteControlUser = new RemoteControlUser($universalRemote);
 
 				$type =  (isset($_POST['remote_type'])) 
 					? strip_tags($_POST['remote_type']) 
@@ -96,18 +96,19 @@ class Action { //extends ApiController {
 				switch ($type) {
 				  default:
 				  case 'Television':
-				    $remoteControl = new TVRemote();
+				    $remoteControl = new TVRemote($tv);
 				    break;
 
 				  case 'CableBox':
-				    $remoteControl = new CableBoxRemote();
+				    $remoteControl = new CableBoxRemote($cablebox);
 				    break;
 
 				  case 'Universal':
-				    $remoteControl = new UniversalRemote();
+				    $remoteControl = new UniversalRemote($tv, $cablebox);
 				    break;
 				}
-				$remoteControlUser->setRemoteControl($remoteControl)->pushButton(); */
+				$remoteControlUser->setRemoteControl($remoteControl)
+								  ->pushButton(); 
 				break;
 
 			case 'order_tracking':
@@ -137,7 +138,9 @@ class Action { //extends ApiController {
 				$partiallyIntitializedExam = $examBuilder->setTime($attributes['time'])
 														 ->setPlace($attributes['place'])
 														 ->getExam(); 
+				echo '<pre>';
 				print_r($fullyInitializedExam);
+				echo '</pre>';
 				break;
 		}
 	}
