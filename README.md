@@ -1,6 +1,9 @@
 # sonnys
-Sonnys Exercise
+Sonnys Evaluation
 
+Please see the live web application: 
+
+http://crystalbit.us/ 
 
 PHP Team
 Candidate Evaluation
