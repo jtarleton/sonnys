@@ -46,6 +46,7 @@ use Sonnys\Application\UniversalRemote;
 
 
 $orderLoader = new OrderLoader();
+$orderId = 1;
 // return an instance of Order
 $orderObject = $orderLoader->load($orderId, new Customer('Andi','Gutmans','1'))->validateOwnership($loggedUser);
 
