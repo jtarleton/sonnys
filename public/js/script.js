@@ -4,8 +4,8 @@
 
 
 
-
-
+var hash = jQuery(location).attr('hash');
+alert(hash);
 
 
 jQuery('.nav-tab').click(function(e) {
