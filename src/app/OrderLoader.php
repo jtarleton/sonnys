@@ -16,7 +16,8 @@ class OrderLoader {
 	 * @return bool
 	.*/
 	public function load($order_id, Customer $customer) {
-		$order = new Order($order_id, $customer);
+		$customer_id = $customer->getId();
+		$order = new Order($order_id, $customer_id);
 		$valid = $order->validateOwnership($customer);
 		return ($valid) ? $order : FALSE;
 	}
