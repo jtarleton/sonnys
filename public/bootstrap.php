@@ -35,7 +35,6 @@ use Sonnys\Application\NameInfo;
 
 
 use Sonnys\Application\Order;
-use Sonnys\Application\OrderLoader;
 
 use Sonnys\Application\RemoteControl;
 use Sonnys\Application\RemoteControlUser;
