@@ -1,4 +1,5 @@
 <?php 
+use Sonnys\Application\Action;
 
 // Widgets app
 use Sonnys\Application\Widget;
