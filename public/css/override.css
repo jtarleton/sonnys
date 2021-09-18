@@ -32,3 +32,18 @@ label{float:left;}
 .comment-0, .comment-1{padding:3px;}
 .comment-0 img, .comment-1 img {float:left;}
 .myLink{padding-left:14px; background:url('http://shikiryu.com/favicon12.png') left center no-repeat;}
+
+
+
+
+.nav-tab-active {
+  color: #f00;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
