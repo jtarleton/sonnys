@@ -84,6 +84,7 @@ class Action { //extends ApiController {
 
 			case 'universal_remote':
 				echo 'Universal Remote.';
+				/*
 				$universalRemote = new UniversalRemote();
 
 				$remoteControlUser = new RemoteControlUser(UniversalRemote);
@@ -106,7 +107,7 @@ class Action { //extends ApiController {
 				    $remoteControl = new UniversalRemote();
 				    break;
 				}
-				$remoteControlUser->setRemoteControl($remoteControl)->pushButton();
+				$remoteControlUser->setRemoteControl($remoteControl)->pushButton(); */
 				break;
 
 			case 'order_tracking':
@@ -122,6 +123,7 @@ class Action { //extends ApiController {
 				break;
 
 			case 'exam':
+				/*
 				$attributes = [
 				  'time' => time(), 
 				  'place' => 'Sonnys', 
@@ -132,22 +134,10 @@ class Action { //extends ApiController {
 				$examBuilder = new ExamBuilder($emptyExam);
 
 				$fullyInitializedExam = $examBuilder->initAll($attributes);
-				$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
+				$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam(); */
 
 				break;
 		}
-
-		/*
-	
-		*/
-
-		/*
-	
-
-
-		*/
-
-
 	}
 
 	private function _getQueryParameter() {
