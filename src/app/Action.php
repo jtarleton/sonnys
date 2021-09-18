@@ -70,7 +70,8 @@ class Action { //extends ApiController {
 	
 		
 
-
+		$greeter = new Greeter();
+		$informalGreeter = new InformalGreeter();
 		echo "Greeting" . $greeter->getTarget() . '<br />';
 		echo $greeter->sayHello('?') .'<br /><br /><br />';
 		echo "Greeting " . $informalGreeter->getTarget() . '<br />';
