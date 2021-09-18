@@ -25,10 +25,10 @@ class UniversalRemote implements RemoteControl {
 	public function powerOn() : void {
 		$this->_tv->setPower(TRUE);
 		syslog(LOG_INFO, 'Powering on Televison from ' . __CLASS__);
-		echo 'Powering on Televison from ' . __CLASS__;	
+		echo 'Powering on Televison from ' . __CLASS__ . '<br />';	
 
 		$this->_cablebox->setPower(TRUE);
 		syslog(LOG_INFO, 'Powering on CableBox from ' . __CLASS__);
-		echo 'Powering on CableBox from ' . __CLASS__;	
+		echo 'Powering on CableBox from ' . __CLASS__ . '<br />';	
 	}
 }
