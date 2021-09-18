@@ -55,11 +55,18 @@ use Sonnys\Application\UniversalRemote;
  */
 class Action { //extends ApiController {
 
+	public $params = [];
+	public $loggedUser;
+	public $orderId;
+	public function __construct() {
+			// return an instance of Customer
+		$this->loggedUser = $this->_getLoggedUser();
+		$this->params = $_REQUEST;
+		$this->orderId = $this->_getQueryParameter('order_id');
+	}
 	public function render() {
-		$orderId = $this->_getQueryParameter('order_id');
 		
-		// return an instance of Customer
-		$loggedUser = $this->_getLoggedUser();
+	
 		
 
 
@@ -122,8 +129,8 @@ class Action { //extends ApiController {
 	}
 
 	private function _getQueryParameter() {
-		return (!empty($_GET['orderid']) 
-				? strip_tags($_GET['orderid']) 
+		return (!empty($this->params['order_id']) 
+				? strip_tags($this->params['order_id']) 
 				: 1;
 	}
 
