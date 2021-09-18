@@ -4,7 +4,7 @@ namespace Sonnys\Application;
 
 use \Sonnys\Application\Exam;
 use \Sonnys\Application\ExamBuilderInterface;
-
+use \PDO;
 /**
  * Loads Order objects with values from the database.
  */
@@ -41,7 +41,7 @@ class OrderLoader {
 	 * 
 	 */
 	public function Create() {
-		use PDO;
+	
 		$dbh = new PDO();
 		$sql = 'INSERT INTO order (id, 
 			order_no, 
