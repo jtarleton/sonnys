@@ -10,4 +10,4 @@ $classes = get_declared_classes();
 $action->render();
 
 echo '<br />Done.'; 
-require __DIR__ . './templates/footer.php';
+require __DIR__ . '/templates/footer.php';
