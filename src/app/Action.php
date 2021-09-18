@@ -129,7 +129,7 @@ class Action { //extends ApiController {
 	}
 
 	private function _getQueryParameter() {
-		return (!empty($this->params['order_id']) 
+		return !empty($this->params['order_id']) 
 				? strip_tags($this->params['order_id']) 
 				: 1;
 	}
