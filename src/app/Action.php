@@ -84,6 +84,10 @@ class Action { //extends ApiController {
 
 			case 'universal_remote':
 				echo 'Universal Remote.';
+				$type =  (isset($_POST['remote_type'])) 
+					? strip_tags($_POST['remote_type']) 
+					: NULL;
+
 				$tv = new Television();
 				$cablebox = new CableBox();
 				$universalRemote = new UniversalRemote($tv, $cablebox);
@@ -91,9 +95,7 @@ class Action { //extends ApiController {
 				if (!empty($type)) {
 					echo 'You selected <b>' . $type .'</b>'; 
 				}
-				$type =  (isset($_POST['remote_type'])) 
-					? strip_tags($_POST['remote_type']) 
-					: NULL;
+			
 
 				switch ($type) {
 				  default:
