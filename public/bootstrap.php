@@ -33,7 +33,7 @@ use Sonnys\Application\Nameable;
 use Sonnys\Application\NameInfo;
 
 
-use Sonnys\Application\Customer;
+
 use Sonnys\Application\Order;
 use Sonnys\Application\OrderLoader;
 
