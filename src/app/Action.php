@@ -93,10 +93,9 @@ class Action { //extends ApiController {
 				$universalRemote = new UniversalRemote($tv, $cablebox);
 				$remoteControlUser = new RemoteControlUser($universalRemote);
 				if (!empty($type)) {
-					echo 'You selected <b>' . $type .'</b>'; 
+					echo '<p>You selected <strong>' . $type .'</strong></p>'; 
 				}
 			
-
 				switch ($type) {
 				  default:
 				  case 'Television':

@@ -19,6 +19,7 @@ class TVRemote implements RemoteControl {
 	public function powerOn() : void {
 		$this->_tv->setPower(TRUE);
 		syslog(LOG_INFO, 'Powering on Televison from ' . __CLASS__);
+		echo 'Powering on Televison from ' . __CLASS__;		
 	}
 
 }
