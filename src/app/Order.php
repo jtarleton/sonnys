@@ -13,7 +13,7 @@ class Order {
 
 	protected $_totalAmount;
 
-	protected function __construct(int $id, int $customerId) {
+	public function __construct(int $id, int $customerId) {
 		$this->id = $id;
 		$this->_customerId = $customerId;
 	}
