@@ -84,6 +84,7 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
     );
 
     public static $classMap = array (
+        'Database' => __DIR__ . '/../..' . '/src/app/Database.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -702,6 +703,7 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'Sonnys\\Application\\Action' => __DIR__ . '/../..' . '/src/app/Action.php',
+        'Sonnys\\Application\\BaseObject' => __DIR__ . '/../..' . '/src/app/BaseObject.php',
         'Sonnys\\Application\\Bird' => __DIR__ . '/../..' . '/src/app/Bird.php',
         'Sonnys\\Application\\CableBox' => __DIR__ . '/../..' . '/src/app/CableBox.php',
         'Sonnys\\Application\\CableBoxRemote' => __DIR__ . '/../..' . '/src/app/CableBoxRemote.php',
@@ -720,6 +722,8 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
         'Sonnys\\Application\\Nameable' => __DIR__ . '/../..' . '/src/app/Nameable.php',
         'Sonnys\\Application\\Order' => __DIR__ . '/../..' . '/src/app/Order.php',
         'Sonnys\\Application\\OrderLoader' => __DIR__ . '/../..' . '/src/app/OrderLoader.php',
+        'Sonnys\\Application\\Orders' => __DIR__ . '/../..' . '/src/app/Orders.php',
+        'Sonnys\\Application\\OrdersTable' => __DIR__ . '/../..' . '/src/app/OrdersTable.php',
         'Sonnys\\Application\\Pegasus' => __DIR__ . '/../..' . '/src/app/Pegasus.php',
         'Sonnys\\Application\\PegasusInterface' => __DIR__ . '/../..' . '/src/app/PegasusInterface.php',
         'Sonnys\\Application\\Person' => __DIR__ . '/../..' . '/src/app/Person.php',

@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Database' => $baseDir . '/src/app/Database.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => $vendorDir . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -624,6 +625,7 @@ return array(
     'SebastianBergmann\\Type\\VoidType' => $vendorDir . '/sebastian/type/src/VoidType.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'Sonnys\\Application\\Action' => $baseDir . '/src/app/Action.php',
+    'Sonnys\\Application\\BaseObject' => $baseDir . '/src/app/BaseObject.php',
     'Sonnys\\Application\\Bird' => $baseDir . '/src/app/Bird.php',
     'Sonnys\\Application\\CableBox' => $baseDir . '/src/app/CableBox.php',
     'Sonnys\\Application\\CableBoxRemote' => $baseDir . '/src/app/CableBoxRemote.php',
@@ -642,6 +644,8 @@ return array(
     'Sonnys\\Application\\Nameable' => $baseDir . '/src/app/Nameable.php',
     'Sonnys\\Application\\Order' => $baseDir . '/src/app/Order.php',
     'Sonnys\\Application\\OrderLoader' => $baseDir . '/src/app/OrderLoader.php',
+    'Sonnys\\Application\\Orders' => $baseDir . '/src/app/Orders.php',
+    'Sonnys\\Application\\OrdersTable' => $baseDir . '/src/app/OrdersTable.php',
     'Sonnys\\Application\\Pegasus' => $baseDir . '/src/app/Pegasus.php',
     'Sonnys\\Application\\PegasusInterface' => $baseDir . '/src/app/PegasusInterface.php',
     'Sonnys\\Application\\Person' => $baseDir . '/src/app/Person.php',
