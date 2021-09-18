@@ -14,26 +14,41 @@ $classes = get_declared_classes();
 	<a href="#tab-4" class="nav-tab">Order Tracking</a>
 	<a href="#tab-5" class="nav-tab">Naming</a>
 	<a href="#tab-6" class="nav-tab">Widgets</a>
+	<a href="#tab-7" class="nav-tab">Exam</a>	
 </h2>
 <hr />
 <section id="tab-1" class="tab-content active">
-  <p><?php $action->render(); ?></p>
+  <p><?php $action->render('greeter'); ?></p>
 </section>
 <section id="tab-2" class="tab-content">
-  <p>Pegasus.</p>
+  <p><?php $action->render('pegasus'); ?>  </p>
 </section>
 <section id="tab-3" class="tab-content">
-  <p>Universal Remote.</p>
+  <p>
+
+  	<fieldset> <legend>Select a Remote Type</legend>
+  	<form action="" method="POST">
+
+  		<div>
+  		<select name="remote_type"><option value="Television">Television</option><option value="CableBox">Cable Box</option><option value="Universal">Universal</option></select></div>
+
+  		<div><input type="submit" value="Submit"></input></div>
+  	</form></fieldset>
+
+  	<?php $action->render('universal_remote'); ?>   </p>
 </section>
 
 <section id="tab-4" class="tab-content">
-  <p>Order Tracking.</p>
+  <p><?php $action->render('order_tracking'); ?>   </p>
 </section>
 <section id="tab-5" class="tab-content">
-  <p>Naming.</p>
+  <p><?php $action->render('naming'); ?>   </p>
 </section>
 <section id="tab-6" class="tab-content">
-  <p>Widgets.</p>
+  <p><?php $action->render('widgets'); ?>   </p>
+</section>
+<section id="tab-7" class="tab-content">
+  <p><?php $action->render('exam'); ?>   </p>
 </section>
 <?php
 echo '<br />Done.'; 

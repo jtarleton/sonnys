@@ -65,64 +65,84 @@ class Action { //extends ApiController {
 		$this->params = $_REQUEST;
 		$this->orderId = $this->_getQueryParameter('order_id');
 	}
-	public function render() {
-		
-	
-		
+	public function render($tab) {
+			
+		switch($tab) {
+			case 'greeter':
+			default:
+				$greeter = new Greeter();
+				$informalGreeter = new InformalGreeter();
+				echo "Greeting" . $greeter->getTarget() . '<br />';
+				echo $greeter->sayHello('?') .'<br /><br /><br />';
+				echo "Greeting " . $informalGreeter->getTarget() . '<br />';
+				echo $informalGreeter->sayHello() . '<br /><br /><br />';
+				break;
 
-		$greeter = new Greeter();
-		$informalGreeter = new InformalGreeter();
-		echo "Greeting" . $greeter->getTarget() . '<br />';
-		echo $greeter->sayHello('?') .'<br /><br /><br />';
-		echo "Greeting " . $informalGreeter->getTarget() . '<br />';
-		echo $informalGreeter->sayHello() . '<br /><br /><br />';
+			case 'pegasus':
+				echo 'Pegasus.';
+				break;
 
+			case 'universal_remote':
+				echo 'Universal Remote.';
+				$universalRemote = new UniversalRemote();
 
+				$remoteControlUser = new RemoteControlUser(UniversalRemote);
 
+				$type =  (isset($_POST['remote_type'])) 
+					? strip_tags($_POST['remote_type']) 
+					: NULL;
 
+				switch ($type) {
+				  default:
+				  case 'Television':
+				    $remoteControl = new TVRemote();
+				    break;
 
+				  case 'CableBox':
+				    $remoteControl = new CableBoxRemote();
+				    break;
 
+				  case 'Universal':
+				    $remoteControl = new UniversalRemote();
+				    break;
+				}
+				$remoteControlUser->setRemoteControl($remoteControl)->pushButton();
+				break;
 
+			case 'order_tracking':
+				echo 'Order Tracking.';
+				break;
+
+			case 'naming':
+				echo 'Naming.';
+				break;
+
+			case 'widgets':
+				echo ' Widgets. ';
+				break;
+
+			case 'exam':
+				$attributes = [
+				  'time' => time(), 
+				  'place' => 'Sonnys', 
+				  'timeLimit' => NULL
+				];
+
+				$emptyExam = new Exam();
+				$examBuilder = new ExamBuilder($emptyExam);
+
+				$fullyInitializedExam = $examBuilder->initAll($attributes);
+				$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
+
+				break;
+		}
 
 		/*
-		$attributes = [
-		  'time' => time(), 
-		  'place' => 'Sonnys', 
-		  'timeLimit' => NULL
-		];
-
-		$emptyExam = new Exam();
-		$examBuilder = new ExamBuilder($emptyExam);
-
-		$fullyInitializedExam = $examBuilder->initAll($attributes);
-		$partiallyIntitializedExam = $examBuilder->setTime()->setPlace()->getExam();
-
+	
 		*/
 
 		/*
-		$universalRemote = new UniversalRemote();
-
-		$remoteControlUser = new RemoteControlUser(UniversalRemote);
-
-		$type = NULL;
-
-		switch ($type) {
-		  default:
-		  case 'Television':
-		    $remoteControl = new TVRemote();
-		    break;
-
-		  case 'CableBox':
-		    $remoteControl = new CableBoxRemote();
-		    break;
-
-		  case 'Universal':
-		    $remoteControl = new UniversalRemote();
-		    break;
-		}
-		$remoteControlUser->setRemoteControl($remoteControl)->pushButton();
-
-
+	
 
 
 		*/
