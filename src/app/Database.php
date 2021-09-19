@@ -56,7 +56,7 @@ class Database {
     $user = $ini_array['third_section']['mysql_settings']['user'];
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
 
-    $db = null;
+    $db = null; /*
     $db = new \PDO($dsn, $user, $pass );
 
     if ($cache) {
@@ -71,7 +71,7 @@ class Database {
       case 'mysql':
       $db->prepare("set names 'UTF8'")->execute();
       break;
-    }
+    } */
     return $db; 
   }
 }
