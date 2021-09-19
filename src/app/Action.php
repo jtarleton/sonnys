@@ -132,8 +132,9 @@ class Action { //extends ApiController {
 				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
 			
 				$customer = new Customer('Andi','Gutmans', 1);
-				//	$orderObject = $orderLoader->load($orderId, $customer)
-				//	           ->validateOwnership($loggedUser);
+
+				$orderObject = $orderLoader->load($orderId, $customer)
+					           ->validateOwnership($loggedUser);
 
 				break;
 
@@ -147,20 +148,17 @@ class Action { //extends ApiController {
 				catch (Exception $e) {
 					echo $e->getMessage();
 				}
-				echo '<pre>';
-				print_r($pet);
-				echo '</pre>';
 
 				echo '<pre>';
 				print_r($person);
 				echo '</pre>';
 
 				echo '<pre>';
-				print_r($pet);
+				print_r($employee);
 				echo '</pre>';
 
 				echo '<pre>';
-				print_r($employee);
+				print_r($pet);
 				echo '</pre>';
 				break;
 
