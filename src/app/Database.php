@@ -34,7 +34,7 @@ class Database {
     $server = $ini_array['third_section']['mysql_settings']['host'];
     $port = $ini_array['third_section']['mysql_settings']['port'];
     $dbname = $ini_array['third_section']['mysql_settings']['dbname'];
-
+/*
     switch (strtolower($dbtype)) {
       case 'mysql':
         $dsn = 'mysql:host='.$server;
@@ -55,6 +55,9 @@ class Database {
     // User and Password Credentials
     $user = $ini_array['third_section']['mysql_settings']['user'];
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
+
+*/
+
     $db = null; 
   //  $db = new \PDO($dsn, $user, $pass );
 /* 
