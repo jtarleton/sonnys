@@ -134,13 +134,13 @@ class Action { //extends ApiController {
 
 			case 'widgets':
 				echo ' Widgets. ';
-				$widget = new Widget();
-				$supportWidget = new SupportWidget();
-
 				$widget = WidgetFactory::Create();
+				echo '<pre>';
+				print_r($widget );
+				echo '</pre>';
 				$supportWidget = WidgetFactory::Create('Support');
 				echo '<pre>';
-				print_r();
+				print_r($supportWidget );
 				echo '</pre>';
 				break;
 
