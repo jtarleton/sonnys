@@ -40,7 +40,7 @@ class Database {
         $dsn = 'mysql:host='.$server;
         $dsn .= ';port=' . $port;
 
-        if (!empty($database)) {
+        if (!empty($dbname)) {
           $dsn .= ';dbname='.$dbname; 
         }
         $dsn .= ';charset=utf8';
