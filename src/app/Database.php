@@ -47,7 +47,7 @@ class Database {
 
         break;
       default:
-        throw new Exception('Unknown database type: '.$uri);
+        throw new \Exception('Unknown database type: '.$uri);
         break;
     }
     syslog(LOG_INFO, sprintf('[%s] creating PDO with DSN: %s', __CLASS__, $dsn));
