@@ -133,6 +133,8 @@ class Action { //extends ApiController {
 				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
 				$orderObject = $orderLoader->load($order_id, $customer);
 					//                       ->validateOwnership($loggedUser);
+				$allorders = Order::getAll();
+				print_r($allorders);
 				break;
 
 			case 'naming':
