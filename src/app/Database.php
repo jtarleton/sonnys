@@ -62,6 +62,8 @@ class Database {
       self::$pdo_objects[$uri]['dbh'] = $db; 
     }
 */
+
+    /*
     $db->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION );
 
     // Execute post-creation SQL
@@ -70,7 +72,7 @@ class Database {
       case 'mysql':
       $db->prepare("set names 'UTF8'")->execute();
       break;
-    } 
+    }  */
     return $db; 
   }
 }
