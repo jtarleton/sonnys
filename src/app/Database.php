@@ -51,15 +51,15 @@ class Database {
         break;
     }
     syslog(LOG_INFO, sprintf('[%s] creating PDO with DSN: %s', __CLASS__, $dsn));
-
+*/
     // User and Password Credentials
     $user = $ini_array['third_section']['mysql_settings']['user'];
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
 
-*/
+
 
     $db = null; 
-  //  $db = new \PDO($dsn, $user, $pass );
+    $db = new \PDO($dsn, $user, $pass );
 /* 
     if ($cache) {
       self::$pdo_objects[$uri]['dbh'] = $db; 
