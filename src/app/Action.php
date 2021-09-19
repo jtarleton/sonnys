@@ -123,9 +123,7 @@ class Action { //extends ApiController {
 				$customer = new Customer('Andi','Gutmans', 1);
 				$orderObject = $orderLoader->load($orderId, $customer)
 								           ->validateOwnership($loggedUser);
-				$widget = new Widget();
-				$supportWidget = new SupportWidget();
-				$action = new Action();
+
 				break;
 
 			case 'naming':
