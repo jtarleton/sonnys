@@ -21,8 +21,11 @@ class OrderLoader {
 	public function load($order_id, Customer $customer) {
 		$customer_id = $customer->getId();
 		$order = new Order($order_id, $customer_id);
-		//$valid = 1; // $order->validateOwnership($order, $customer);
-		return $order; //($valid) ? $order : FALSE;
+		$valid = $order->validateOwnership($order, $customer);
+		if(!$valid) {
+			throw new \Exception('Invalid customer or order (' . __FUNCTION__ .')');
+		}
+		return ($valid) ? $order : FALSE;
 	}
 
 	/** 
@@ -38,7 +41,7 @@ class OrderLoader {
 		if (!empty($customerId) && !empty($orderCustomerId)) {
 			 return $customerId === $orderCustomerId;
 		}
-		throw new Exception('Invalid customer or order');
+		throw new \Exception('Invalid customer or order (' . __FUNCTION__ .')');
 	}
 
 	/**
