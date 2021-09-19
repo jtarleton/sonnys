@@ -16,8 +16,8 @@ class Order {
 	public function __construct(int $id, int $customerId) {
 		$this->_id = $id;
 		$this->_customerId = $customerId;
-		$pdo = new stdClass; //Database::PDOCreate();
-		echo get_class($pdo);
+		//$pdo = new stdClass; //Database::PDOCreate();
+		//echo get_class($pdo);
 	}
 
 
