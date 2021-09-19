@@ -12,7 +12,7 @@ class Customer {
 	public function __construct($firstName, $lastName, $id) {
 		$this->_firstName = $firstName;
 		$this->_lastName = $lastName;
-		$this->_id = $id;
+		$this->_id = (int)$id;
 		$this->_createdDate = new \DateTimeImmutable('now');
 
 	}
