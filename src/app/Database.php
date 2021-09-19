@@ -12,13 +12,13 @@ class Database {
    * Return a PDO instance
    */
   public static function PDOCreate($cache = TRUE) {
-return true;
 
 
-/*
+
+
     // Parse INI file with sections
     $ini_array = parse_ini_file(INI_PATH, true);
-
+/*
     if ($cache) {
       if (isset(self::$pdo_objects[$uri])) {
         self::$pdo_objects[$uri]['count']++;
