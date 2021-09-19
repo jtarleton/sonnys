@@ -80,6 +80,17 @@ class Action { //extends ApiController {
 				$horse = new Horse();
 				$bird = new Bird();
 				$pegasus = new Pegasus($bird, $horse);
+				echo '<pre>';
+				print_r($horse);
+				echo '</pre>';
+
+				echo '<pre>';
+				print_r($bird);
+				echo '</pre>';
+
+				echo '<pre>';
+				print_r($pegasus);
+				echo '</pre>';
 				break;
 
 			case 'universal_remote':
@@ -121,8 +132,8 @@ class Action { //extends ApiController {
 				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
 			
 				$customer = new Customer('Andi','Gutmans', 1);
-			//	$orderObject = $orderLoader->load($orderId, $customer)
-							//	           ->validateOwnership($loggedUser);
+				//	$orderObject = $orderLoader->load($orderId, $customer)
+				//	           ->validateOwnership($loggedUser);
 
 				break;
 
@@ -130,14 +141,32 @@ class Action { //extends ApiController {
 				echo 'Naming.';
 				$pet = new Pet();
 				$person = new Person();
+				$employee = new Employee();
+				echo '<pre>';
+				print_r($pet);
+				echo '</pre>';
+
+				echo '<pre>';
+				print_r($person);
+				echo '</pre>';
+
+				echo '<pre>';
+				print_r($pet);
+				echo '</pre>';
+
+				echo '<pre>';
+				print_r($employee);
+				echo '</pre>';
 				break;
 
 			case 'widgets':
 				echo ' Widgets. ';
+				
 				$widget = WidgetFactory::Create();
 				echo '<pre>';
 				print_r($widget );
 				echo '</pre>';
+
 				$supportWidget = WidgetFactory::Create('Support');
 				echo '<pre>';
 				print_r($supportWidget );
