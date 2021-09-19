@@ -14,7 +14,7 @@ class Order {
 	protected $_totalAmount;
 
 	public function __construct(int $id, int $customerId) {
-		$this->id = $id;
+		$this->_id = $id;
 		$this->_customerId = $customerId;
 		$pdo = Database::PDOCreate();
 		echo get_class($pdo);
