@@ -10,7 +10,9 @@
     ],
     "require": {
         "monolog/monolog": "^2.3",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "symfony/http-kernel": "^5.3",
+        "laravel/lumen": "^8.1"
     },
     "autoload": {
         "classmap": [
