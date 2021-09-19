@@ -121,8 +121,8 @@ class Action { //extends ApiController {
 				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
 			
 				$customer = new Customer('Andi','Gutmans', 1);
-				$orderObject = $orderLoader->load($orderId, $customer)
-								           ->validateOwnership($loggedUser);
+			//	$orderObject = $orderLoader->load($orderId, $customer)
+							//	           ->validateOwnership($loggedUser);
 
 				break;
 
