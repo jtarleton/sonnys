@@ -27,7 +27,7 @@ class Database {
 
       self::$pdo_objects[$uri]['count'] = 1;
     }
-/*
+
     // Format the DSN string to match how the PDO driver expects the data
     $dsn = '';
     $dbtype = $ini_array['third_section']['mysql_settings']['scheme'];
@@ -57,7 +57,7 @@ class Database {
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
 
     $db = null;
-    $db = new PDO($dsn, $user, $pass );
+    $db = new \PDO($dsn, $user, $pass );
 
     if ($cache) {
       self::$pdo_objects[$uri]['dbh'] = $db; 
@@ -72,6 +72,6 @@ class Database {
       $db->prepare("set names 'UTF8'")->execute();
       break;
     }
-    return $db; */
+    return $db; 
   }
 }
