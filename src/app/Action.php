@@ -134,7 +134,7 @@ class Action { //extends ApiController {
 				try {
 					$orderObject = $orderLoader->load($order_id, $customer)
 					                           ->validateOwnership($loggedUser);
-				} catch($e) {
+				} catch (\Exception $e) {
 					echo $e->getMessage();
 				}
 				$allorders = Order::getAll();
