@@ -13,7 +13,26 @@ class Employee extends Person implements EmployeeInterface {
 	
 	use NameInfo;
 
+	/**
+	 * @property 
+	 */
+	private $employeeId;
+
+	/**
+	 * Constructor
+	 */
 	public function __construct() {
 		parent::__construct();
 	}	
+
+	/**
+	 * @param string
+	 */
+	public function setEmployeeId(string $employeeId) {
+		$this->employeeId = $employeeId;
+		return $this;
+	}
+	public function getEmployeeId() {
+		return $this->employeeId;
+	}
 }
