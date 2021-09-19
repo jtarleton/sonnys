@@ -2,6 +2,7 @@
 
 namespace Sonnys\Application;
 use Sonnys\Application\Database;
+use Sonnys\Application\OrderLoader;
 /**
  * Order
  */
