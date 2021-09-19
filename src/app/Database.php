@@ -67,7 +67,7 @@ class Database {
     }
 
     if ($cache) {
-      self::$pdo_objects[$uri]['dbh'] = $db; 
+      self::$pdo_objects[$dsn]['dbh'] = $db; 
     }
 
 
