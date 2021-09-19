@@ -129,10 +129,10 @@ class Action { //extends ApiController {
 				echo 'Order Tracking.';
 				$order_id = 1;
 				$customer = new Customer('Andi','Gutmans', 1);
-				$orderLoader = new OrderLoader($customer, $order_id);
+				$orderLoader = new OrderLoader();
 				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
 				$orderObject = $orderLoader->load($order_id, $customer);
-//					                       ->validateOwnership($loggedUser);
+					                       ->validateOwnership($loggedUser);
 				break;
 
 			case 'naming':
