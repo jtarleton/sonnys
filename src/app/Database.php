@@ -18,7 +18,7 @@ class Database {
 
     // Parse INI file with sections
     $ini_array = parse_ini_file(INI_PATH, true);
-/*
+
     if ($cache) {
       if (isset(self::$pdo_objects[$uri])) {
         self::$pdo_objects[$uri]['count']++;
@@ -27,7 +27,7 @@ class Database {
 
       self::$pdo_objects[$uri]['count'] = 1;
     }
-
+/*
     // Format the DSN string to match how the PDO driver expects the data
     $dsn = '';
     $dbtype = $ini_array['third_section']['mysql_settings']['scheme'];
