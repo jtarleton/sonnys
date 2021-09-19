@@ -22,7 +22,7 @@ class OrderLoader {
 		$customer_id = $customer->getId();
 		$order = new Order($order_id, $customer_id);
 		//$valid = 1; // $order->validateOwnership($order, $customer);
-		return; //($valid) ? $order : FALSE;
+		return $order; //($valid) ? $order : FALSE;
 	}
 
 	/** 

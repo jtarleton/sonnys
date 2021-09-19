@@ -131,8 +131,8 @@ class Action { //extends ApiController {
 				$customer = new Customer('Andi','Gutmans', 1);
 				$orderLoader = new OrderLoader();
 				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
-				$orderObject = $orderLoader->load($order_id, $customer);
-					                      //->validateOwnership($loggedUser);
+				$orderObject = $orderLoader->load($order_id, $customer)
+					                      ->validateOwnership($loggedUser);
 				$allorders = Order::getAll();
 					echo '<pre>'; 
 				print_r($allorders);
