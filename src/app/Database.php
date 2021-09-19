@@ -34,7 +34,7 @@ class Database {
     $server = $ini_array['third_section']['mysql_settings']['host'];
     $port = $ini_array['third_section']['mysql_settings']['port'];
     $dbname = $ini_array['third_section']['mysql_settings']['dbname'];
-/*
+
     switch (strtolower($dbtype)) {
       case 'mysql':
         $dsn = 'mysql:host='.$server;
@@ -50,8 +50,8 @@ class Database {
         throw new \Exception('Unknown database type: '.$uri);
         break;
     }
-    syslog(LOG_INFO, sprintf('[%s] creating PDO with DSN: %s', __CLASS__, $dsn));
-*/
+    //syslog(LOG_INFO, sprintf('[%s] creating PDO with DSN: %s', __CLASS__, $dsn));
+
     // User and Password Credentials
     $user = $ini_array['third_section']['mysql_settings']['user'];
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
@@ -59,8 +59,8 @@ class Database {
 
 
     $db = null; 
-    try{
-    $db = new \PDO($dsn, $user, $pass ); 
+    try {
+      $db = new \PDO($dsn, $user, $pass ); 
     }
     catch(\PDOException $pdoe) {
       echo $pdoe->getMessage();
