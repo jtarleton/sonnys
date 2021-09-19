@@ -48,9 +48,6 @@ use Sonnys\Application\Television;
 use Sonnys\Application\TVRemote;
 use Sonnys\Application\UniversalRemote; 
 
-
-
-
 /**
  * 
  */
@@ -80,6 +77,9 @@ class Action { //extends ApiController {
 
 			case 'pegasus':
 				echo 'Pegasus.';
+				$horse = new Horse();
+				$bird = new Bird();
+				$pegasus = new Pegasus($bird, $horse);
 				break;
 
 			case 'universal_remote':
@@ -112,23 +112,41 @@ class Action { //extends ApiController {
 				}
 				$remoteControlUser->setRemoteControl($remoteControl)
 								  ->pushButton(); 
-
 				break;
 
 			case 'order_tracking':
 				echo 'Order Tracking.';
+				$orderLoader = new OrderLoader();
+				$orderId = 1;
+				$loggedUser = new Customer('Rasmus','Lerdorf', 1);
+			
+				$customer = new Customer('Andi','Gutmans', 1);
+				$orderObject = $orderLoader->load($orderId, $customer)
+								           ->validateOwnership($loggedUser);
+				$widget = new Widget();
+				$supportWidget = new SupportWidget();
+				$action = new Action();
 				break;
 
 			case 'naming':
 				echo 'Naming.';
+				$pet = new Pet();
+				$person = new Person();
 				break;
 
 			case 'widgets':
 				echo ' Widgets. ';
+				$widget = new Widget();
+				$supportWidget = new SupportWidget();
+
+				$widget = WidgetFactory::Create();
+				$supportWidget = WidgetFactory::Create('Support');
+				echo '<pre>';
+				print_r();
+				echo '</pre>';
 				break;
 
 			case 'exam':
-				
 				$attributes = [
 				  'time' => time(), 
 				  'place' => 'Sonnys', 
@@ -143,8 +161,11 @@ class Action { //extends ApiController {
 														 ->setPlace($attributes['place'])
 														 ->getExam(); 
 				echo '<pre>';
-				print_r($fullyInitializedExam);
+				print_r($partiallyIntitializedExam);
 				echo '</pre>';
+				echo '<pre>';
+				print_r($fullyInitializedExam);
+				echo '</pre>';		
 				break;
 		}
 	}
