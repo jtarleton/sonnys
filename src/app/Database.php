@@ -59,7 +59,12 @@ class Database {
 
 
     $db = null; 
-  //  $db = new \PDO($dsn, $user, $pass );
+    try{
+    $db = new \PDO($dsn, $user, $pass ); 
+    }
+    catch(\PDOException $pdoe) {
+      echo $pdoe->getMessage();
+    }
 /* 
     if ($cache) {
       self::$pdo_objects[$uri]['dbh'] = $db; 
