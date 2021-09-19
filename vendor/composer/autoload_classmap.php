@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Database' => $baseDir . '/src/app/Database.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => $vendorDir . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -630,6 +629,7 @@ return array(
     'Sonnys\\Application\\CableBox' => $baseDir . '/src/app/CableBox.php',
     'Sonnys\\Application\\CableBoxRemote' => $baseDir . '/src/app/CableBoxRemote.php',
     'Sonnys\\Application\\Customer' => $baseDir . '/src/app/Customer.php',
+    'Sonnys\\Application\\Database' => $baseDir . '/src/app/Database.php',
     'Sonnys\\Application\\Employee' => $baseDir . '/src/app/Employee.php',
     'Sonnys\\Application\\EmployeeInterface' => $baseDir . '/src/app/EmployeeInterface.php',
     'Sonnys\\Application\\Exam' => $baseDir . '/src/app/Exam.php',

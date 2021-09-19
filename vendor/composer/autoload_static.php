@@ -84,7 +84,6 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
     );
 
     public static $classMap = array (
-        'Database' => __DIR__ . '/../..' . '/src/app/Database.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -708,6 +707,7 @@ class ComposerStaticInit9abc94a005d4ea7e40ff1627dcdae5d0
         'Sonnys\\Application\\CableBox' => __DIR__ . '/../..' . '/src/app/CableBox.php',
         'Sonnys\\Application\\CableBoxRemote' => __DIR__ . '/../..' . '/src/app/CableBoxRemote.php',
         'Sonnys\\Application\\Customer' => __DIR__ . '/../..' . '/src/app/Customer.php',
+        'Sonnys\\Application\\Database' => __DIR__ . '/../..' . '/src/app/Database.php',
         'Sonnys\\Application\\Employee' => __DIR__ . '/../..' . '/src/app/Employee.php',
         'Sonnys\\Application\\EmployeeInterface' => __DIR__ . '/../..' . '/src/app/EmployeeInterface.php',
         'Sonnys\\Application\\Exam' => __DIR__ . '/../..' . '/src/app/Exam.php',
