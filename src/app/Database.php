@@ -23,8 +23,6 @@ class Database {
       self::$pdo_objects[$uri]['count'] = 1;
     }
 
-    $args = parse_url($uri);
-
     // Format the DSN string to match how the PDO driver expects the data
     $dsn = '';
     $dbtype = $ini_array['third_section']['mysql_settings']['scheme'];
