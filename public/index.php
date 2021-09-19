@@ -2,7 +2,6 @@
 
 // Autoload files using the Composer autoloader.
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../config/global-settings.ini';
 require __DIR__ . '/bootstrap.php';
 require __DIR__ . '/templates/header.php';
 ?>
