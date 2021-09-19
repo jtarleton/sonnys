@@ -141,7 +141,12 @@ class Action { //extends ApiController {
 				echo 'Naming.';
 				$pet = new Pet();
 				$person = new Person();
-				$employee = new Employee();
+				try {
+					$employee = new Employee(); 
+				}
+				catch ($e) {
+					echo $->getMessage();
+				}
 				echo '<pre>';
 				print_r($pet);
 				echo '</pre>';

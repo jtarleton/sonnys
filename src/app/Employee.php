@@ -4,12 +4,13 @@ namespace Sonnys\Application;
 
 use Sonnys\Application\Person;
 use Sonnys\Application\EmployeeInterface;
+use Sonnys\Application\NameInfo;
 
 /** 
  * An Employee is a special kind of Person who must have a first name, last name, and employee id.  
  * Employee may also have a middle name. 
  */
-class Employee extends Person implements EmployeeInterface {
+class Employee extends Person  { //
 	
 	use NameInfo;
 
