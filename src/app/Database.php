@@ -4,6 +4,8 @@ namespace Sonnys\Application;
 
 class Database {
 
+  private static $pdo_objects;
+
   /**
    * @param bool
    * @return object
