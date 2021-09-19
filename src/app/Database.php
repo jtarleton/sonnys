@@ -17,8 +17,8 @@ class Database {
 
 
     // Parse INI file with sections
-   // $ini_array = parse_ini_file(\INI_PATH, true);
-/*
+    $ini_array = parse_ini_file(\INI_PATH, true);
+
     if ($cache) {
       if (isset(self::$pdo_objects[$uri])) {
         self::$pdo_objects[$uri]['count']++;
@@ -55,15 +55,14 @@ class Database {
     // User and Password Credentials
     $user = $ini_array['third_section']['mysql_settings']['user'];
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
-*/
     $db = null; /*
     $db = new \PDO($dsn, $user, $pass );
-
+/* 
     if ($cache) {
       self::$pdo_objects[$uri]['dbh'] = $db; 
     }
-
-    $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+*/
+    $db->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION );
 
     // Execute post-creation SQL
     switch (strtolower($dbtype)) {
@@ -71,7 +70,7 @@ class Database {
       case 'mysql':
       $db->prepare("set names 'UTF8'")->execute();
       break;
-    } */
+    } 
     return $db; 
   }
 }
