@@ -55,7 +55,7 @@ class Database {
     // User and Password Credentials
     $user = $ini_array['third_section']['mysql_settings']['user'];
     $pass = $ini_array['third_section']['mysql_settings']['pass'];
-    $db = null; /*
+    $db = null; 
     $db = new \PDO($dsn, $user, $pass );
 /* 
     if ($cache) {
