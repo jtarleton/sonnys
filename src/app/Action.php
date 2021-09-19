@@ -141,7 +141,7 @@ class Action { //extends ApiController {
 				echo 'Naming.';
 				$pet = new Pet();
 				$person = new Person();
-				$employee = new Employee();
+				//$employee = new Employee();
 				echo '<pre>';
 				print_r($pet);
 				echo '</pre>';
@@ -161,7 +161,7 @@ class Action { //extends ApiController {
 
 			case 'widgets':
 				echo ' Widgets. ';
-				
+
 				$widget = WidgetFactory::Create();
 				echo '<pre>';
 				print_r($widget );
