@@ -144,7 +144,7 @@ class Action { //extends ApiController {
 				try {
 					$employee = new Employee(); 
 				}
-				catch ($e) {
+				catch (Exception $e) {
 					echo $->getMessage();
 				}
 				echo '<pre>';
