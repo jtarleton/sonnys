@@ -2,10 +2,9 @@
 
 // Autoload files using the Composer autoloader.
 require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../config/global-settings.ini';
 require __DIR__ . '/bootstrap.php';
 require __DIR__ . '/templates/header.php';
-
-$classes = get_declared_classes();
 ?>
 <h2 class="nav-tab-wrapper">
 	<a href="#tab-1" class="nav-tab nav-tab-active">Greeter</a>
@@ -58,6 +57,4 @@ $classes = get_declared_classes();
 <section id="tab-7" class="tab-content">
   <p><?php $action->render('exam'); ?>   </p>
 </section>
-<?php
-echo '<br />Done.'; 
-require __DIR__ . '/templates/footer.php';
+<?php require __DIR__ . '/templates/footer.php';

@@ -1,7 +1,7 @@
 <?php 
 
 namespace Sonnys\Application;
-
+use Sonnys\Application\Database;
 /**
  * Order
  */
@@ -16,6 +16,7 @@ class Order {
 	public function __construct(int $id, int $customerId) {
 		$this->id = $id;
 		$this->_customerId = $customerId;
+		$pdo = Database::PDOCreate();
 	}
 
 
