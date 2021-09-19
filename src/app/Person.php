@@ -2,6 +2,10 @@
 
 namespace Sonnys\Application;
 
+use Sonnys\Application\Nameable;
+use Sonnys\Application\PersonInterface;
+use Sonnys\Application\NameInfo;
+
 /**
  * 
  */

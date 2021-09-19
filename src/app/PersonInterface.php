@@ -11,7 +11,7 @@ interface PersonInterface {
 	/**
 	 * @param string
 	 */
-	public function setLastName(string $lastName);
+	public function setLastName(?string $lastName = '');
 
 	public function getFirstName();
 
