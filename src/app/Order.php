@@ -17,6 +17,7 @@ class Order {
 		$this->id = $id;
 		$this->_customerId = $customerId;
 		$pdo = Database::PDOCreate();
+		echo get_class($pdo);
 	}
 
 
