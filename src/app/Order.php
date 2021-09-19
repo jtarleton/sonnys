@@ -62,11 +62,11 @@ class Order {
 			ORDER BY o.date DESC
 			LIMIT :offset,:lim");
 
-		$stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
-		$stmt->bindValue(':lim', $limit, PDO::PARAM_INT);
+		$stmt->bindValue(':offset', $offset, \PDO::PARAM_INT);
+		$stmt->bindValue(':lim', $limit, \PDO::PARAM_INT);
 		$stmt->execute();
 
-		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$rows = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 		return $rows;
 	}
 }
