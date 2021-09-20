@@ -1,15 +1,21 @@
 <?php
 
-namespace Sonnys\Skeleton\Tests;
-
-use PHPUnit\Framework\TestCase;
+use Laravel\Lumen\Testing\DatabaseMigrations;
+use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
 {
-    /** @test */
-    public function true_is_true()
+    /**
+     * A basic test example.
+     *
+     * @return void
+     */
+    public function testExample()
     {
-        $this->assertTrue(true);
+        $this->get('/');
+
+        $this->assertEquals(
+            $this->app->version(), $this->response->getContent()
+        );
     }
 }
-
