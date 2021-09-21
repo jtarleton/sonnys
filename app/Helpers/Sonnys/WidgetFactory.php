@@ -15,7 +15,7 @@ class WidgetFactory {
 				break;
 			case 'support': 
 			case 'Support': 
-				return new \Sonnys\Application\Support\Widget();
+				return new \App\Helpers\Sonnys\Support\Widget();
 				break;
 		}
 	}

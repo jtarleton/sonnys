@@ -7,7 +7,7 @@ use App\Helpers\Sonnys\Widget;
 use App\Helpers\Sonnys\Support\SupportBase;
 use App\Helpers\Sonnys\WidgetFactory;
 use App\Helpers\Sonnys\Support\Widget as SupportWidget;
-
+//use Symfony\Component\HttpFoundation\Session;
 // Greeter app
 use App\Helpers\Sonnys\InformalGreeter;
 use App\Helpers\Sonnys\GreeterInterface;
